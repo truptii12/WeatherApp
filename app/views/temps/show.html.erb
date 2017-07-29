@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @temp.day %>
+</p>
+
+<p>
+  <strong>Min:</strong>
+  <%= @temp.min %>
+</p>
+
+<p>
+  <strong>Max:</strong>
+  <%= @temp.max %>
+</p>
+
+<p>
+  <strong>Night:</strong>
+  <%= @temp.night %>
+</p>
+
+<p>
+  <strong>Eve:</strong>
+  <%= @temp.eve %>
+</p>
+
+<p>
+  <strong>Morn:</strong>
+  <%= @temp.morn %>
+</p>
+
+<%= link_to 'Edit', edit_temp_path(@temp) %> |
+<%= link_to 'Back', temps_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dt</th>
+      <th>Pressure</th>
+      <th>Humidity</th>
+      
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.dt %></td>
+        <td><%= list.pressure %></td>
+        <td><%= list.humidity %></td>
+        <%@temps = Temp.where("dt = ?", list.dt).first%>
+       <td>  <%= link_to 'Temprature Details', list_temp_path(list.id,@temps) %></td> 
+       
+       <%@weather = Weather.where("dt = ?", list.dt).first%>
+       <td>  <%= link_to 'Weather Details', list_weather_path(list.id,@weather) %></td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

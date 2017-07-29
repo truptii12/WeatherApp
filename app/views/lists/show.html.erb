@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dt:</strong>
+  <%= @list.dt %>
+</p>
+
+<p>
+  <strong>Pressure:</strong>
+  <%= @list.pressure %>
+</p>
+
+<p>
+  <strong>Humidity:</strong>
+  <%= @list.humidity %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @list.speed %>
+</p>
+
+<p>
+  <strong>Deg:</strong>
+  <%= @list.deg %>
+</p>
+
+<p>
+  <strong>Clouds:</strong>
+  <%= @list.clouds %>
+</p>
+
+<p>
+  <strong>Rain:</strong>
+  <%= @list.rain %>
+</p>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

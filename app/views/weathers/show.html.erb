@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Main:</strong>
+  <%= @weather.main %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @weather.description %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @weather.icon %>
+</p>
+
+<%= link_to 'Edit', edit_weather_path(@weather) %> |
+<%= link_to 'Back', weathers_path %>

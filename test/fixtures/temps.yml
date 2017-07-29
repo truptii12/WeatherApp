@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 9.99
+  min: 9.99
+  max: 9.99
+  night: 9.99
+  eve: 9.99
+  morn: 9.99
+
+two:
+  day: 9.99
+  min: 9.99
+  max: 9.99
+  night: 9.99
+  eve: 9.99
+  morn: 9.99

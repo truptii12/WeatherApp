@@ -1,0 +1,41 @@
+<%= form_for(@temp) do |f| %>
+  <% if @temp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@temp.errors.count, "error") %> prohibited this temp from being saved:</h2>
+
+      <ul>
+      <% @temp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br>
+    <%= f.text_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :min %><br>
+    <%= f.text_field :min %>
+  </div>
+  <div class="field">
+    <%= f.label :max %><br>
+    <%= f.text_field :max %>
+  </div>
+  <div class="field">
+    <%= f.label :night %><br>
+    <%= f.text_field :night %>
+  </div>
+  <div class="field">
+    <%= f.label :eve %><br>
+    <%= f.text_field :eve %>
+  </div>
+  <div class="field">
+    <%= f.label :morn %><br>
+    <%= f.text_field :morn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
